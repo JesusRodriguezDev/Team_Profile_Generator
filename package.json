@@ -1,0 +1,30 @@
+{
+  "name": "team_profile_generator",
+  "description": "app to generate a team profile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusRodriguezDev/Team_Profile_Generator.git"
+  },
+  "keywords": [
+    "team",
+    "profile",
+    "generator"
+  ],
+  "author": "Jesus Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusRodriguezDev/Team_Profile_Generator/issues"
+  },
+  "homepage": "https://github.com/JesusRodriguezDev/Team_Profile_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.0.3"
+  }
+
+}
