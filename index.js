@@ -1,12 +1,12 @@
-// inporting generateHTML
+// importing generateHTML
 const generateHTML = require('./src/generateHTML');
 
-// inporting each employee type
+// importing each employee type
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
 
-// inporting needed node modules
+// importing needed node modules
 const fs = require('fs'); 
 const inquirer = require('inquirer');
 
@@ -19,7 +19,7 @@ const addManager = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'Who is the manager of this team?', 
+            message: "Please enter the name of the team's manager", 
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -35,7 +35,7 @@ const addManager = () => {
             message: "Please enter the manager's ID.",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ("Please enter the manager's ID!")
+                    console.log ("Please enter the manager's ID, must be a number!")
                     return false; 
                 } else {
                     return true;
@@ -62,7 +62,7 @@ const addManager = () => {
             message: "Please enter the manager's office number",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ('Please enter only numbers for phone number!')
+                    console.log ('Please enter only numbers office number!')
                     return false; 
                 } else {
                     return true;
@@ -82,7 +82,7 @@ const addManager = () => {
 const addEmployee = () => {
     console.log(`
     *****************************
-   Loading Team Creation Questions
+    ** Team Creation Questions **
     *****************************
    
     `);
